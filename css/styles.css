@@ -1,0 +1,134 @@
+:root {
+  --white: #ffffff;
+  --snow: #fafafa;
+  --forget-me-not: #fcf1e0;
+  --carrot-orange: #fd9222;
+  --matterhorn: #4c4c4c;
+  --blackcurrant: #1e1823;
+  --black: #111111;
+}
+
+/* ============ RESET STYLES ============  */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+  background-color: var(--snow);
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* ============ COMMON STYLES ============ */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section:first-child {
+  padding-top: 80px;
+}
+.section:last-child {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 736px) {
+  .container {
+    max-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section:first-child {
+    padding-top: 100px;
+  }
+  .section:last-child {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section:first-child {
+    padding-top: 120px;
+  }
+  .section:last-child {
+    padding-bottom: 120px;
+  }
+}
+
+/* ============ HEADER STYLES ============ */
+/* ============ HERO STYLES ============ */
+/* ============ BENEFITS STYLES ============ */
+.benefits {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--blackcurrant);
+}
+
+@media screen and (min-width: 736px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* ============ INGREDIENTS STYLES ============ */
+/* ============ HOW IT'S MADE STYLES ============ */
+/* ============ OUR PRODUCTS STYLES ============ */
+/* ============ TOP SELLERS STYLES ============ */
+/* ============ REVIEWS STYLES ============ */
+/* ============ FOOTER STYLES ============ */
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--blackcurrant);
+}
+
+@media screen and (min-width: 736px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
