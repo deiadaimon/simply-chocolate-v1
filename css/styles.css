@@ -26,6 +26,7 @@ button {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -87,6 +88,16 @@ ul {
 .orange {
   color: var(--carrot-orange);
 }
+.button {
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  height: 41px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
 
 @media screen and (min-width: 736px) {
   .container {
@@ -129,6 +140,150 @@ ul {
 
 /* ============ HEADER STYLES ============ */
 /* ============ HERO STYLES ============ */
+.hero {
+  padding-bottom: 80px;
+}
+.hero-wrapper {
+  padding: 395px 22px 20px;
+  border-radius: 30px;
+  background-color: var(--matterhorn);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/hero-bg-w335.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-title {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+.btn-left {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 14px;
+}
+.buy {
+  width: 120px;
+  background-color: var(--carrot-orange);
+}
+.made {
+  border-color: var(--white);
+  width: 159px;
+}
+.btn-right {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.scroll {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  color: var(--white);
+}
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 735px),
+  screen and (min-resolution: 2dppx) and (max-width: 735px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 735px) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-w335@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+  .hero-wrapper {
+    padding: 671px 40px 40px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-w704.jpg);
+  }
+  .hero-title {
+    width: 484px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-left {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 736px),
+  screen and (min-resolution: 2dppx) and (min-width: 736px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 736px) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-w704@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero-wrapper {
+    padding: 381px 40px 40px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-w1136.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1168px),
+  screen and (min-resolution: 2dppx) and (min-width: 1168px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1168px) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-w1136@2x.jpg);
+  }
+}
+
 /* ============ BENEFITS STYLES ============ */
 .benefits {
   padding-top: 20px;
