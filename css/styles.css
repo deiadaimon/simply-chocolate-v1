@@ -59,7 +59,7 @@ ul {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.section:first-child {
+.section:nth-child(3) {
   padding-top: 80px;
 }
 .section:last-child {
@@ -79,6 +79,8 @@ ul {
 }
 .section-title {
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -111,7 +113,7 @@ ul {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .section:first-child {
+  .section:nth-child(3) {
     padding-top: 100px;
   }
   .section:last-child {
@@ -132,7 +134,7 @@ ul {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .section:first-child {
+  .section:nth-child(3) {
     padding-top: 120px;
   }
   .section:last-child {
@@ -510,6 +512,69 @@ ul {
 }
 
 /* ============ INGREDIENTS STYLES ============ */
+.ingredients .section-title {
+  width: 283px;
+}
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ingredients-item {
+  padding: 32px 28px 28px;
+  border: 1px solid var(--carrot-orange);
+  border-radius: 15px;
+  width: 335px;
+  height: 270px;
+  background-color: var(--white);
+}
+.ingredients-item:nth-child(4n + 1) {
+  border-color: transparent;
+  background-color: var(--carrot-orange);
+}
+.ingredients-item:nth-child(4n + 3) {
+  border-color: transparent;
+  background-color: var(--blackcurrant);
+}
+.ingredients-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients-name {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.ingredients-item:nth-child(2n) .ingredients-name {
+  color: var(--black);
+}
+
+@media screen and (min-width: 736px) {
+  .ingredients .section-title {
+    width: 412px;
+  }
+  .ingredients-list {
+    gap: 32px;
+  }
+  .ingredients-item {
+    width: calc((100% - 1 * 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients-list {
+    row-gap: 24px;
+    column-gap: 32px;
+  }
+  .ingredients-item {
+    width: calc((100% - 3 * 32px) / 4);
+  }
+}
+
 /* ============ HOW IT'S MADE STYLES ============ */
 /* ============ OUR PRODUCTS STYLES ============ */
 .products-list {
