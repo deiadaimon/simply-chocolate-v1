@@ -716,6 +716,63 @@ ul {
 }
 
 /* ============ PRODUCTS STYLES ============ */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.products-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 32px 52px;
+  background-color: var(--white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.products-name {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-type {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.price-btn {
+  width: 94px;
+  height: 33px;
+  padding: 8px;
+  margin-top: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--snow);
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .products-item {
+    width: calc((100% - 1 * 32px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .products-list {
+    column-gap: 18px;
+    row-gap: 24px;
+  }
+  .products-item {
+    width: calc((100% - 3 * 18px) / 4);
+    padding: 32px 20px;
+  }
+}
 
 /* ============ BESTSELLERS STYLES ============ */
 
