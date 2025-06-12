@@ -770,6 +770,85 @@
     </footer>
 
     <!-- ============ MODAL ============ -->
+    <div class="backdrop">
+      <div class="modal">
+        <button
+          class="close-modal-btn button"
+          type="button"
+          aria-label="Close modal button"
+        >
+          <svg class="close-modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+          Leave a review about <span class="orange">our chocolate</span>
+        </p>
+        <form class="feedback" name="feedback">
+          <label class="form-label" for="user_name">Name</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+            />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user_email">Email</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="email"
+              name="user_email"
+              id="user_email"
+            />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user_phone">Phone number</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="tel"
+              name="user_phone"
+              id="user_phone"
+            />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="comment">Comment</label>
+          <textarea
+            class="form-comment"
+            id="comment"
+            name="comment"
+            placeholder="Enter text"
+          ></textarea>
+          <label class="form-agreement">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user_agreement"
+              value="false"
+            />
+            <span class="custom-checkbox"
+              ><svg class="checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span class="agreement-text">
+              I accept the terms and conditions of the
+              <a href="" class="agreement-link">Privacy Policy</a></span
+            >
+          </label>
+          <button class="send-btn button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 
     <!-- ============ MOBILE MENU ============ -->
   </body>
